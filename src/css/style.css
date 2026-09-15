@@ -1,1 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Preahvihear&display=swap');
+
+:root {
+    --color-primary: #1b1d87;
+    --bg-dark: #0a1651;
+    --btn-color: #ff8d28;
+    --text-color: white;
+    --header-bg: #4345b4;
+    --linear-bg: linear-gradient(to bottom, #0a1651, #1b1d87, #4345b4)
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: var(--header-bg);
+}
+
+.titulo {
+    color: var(--btn-color);
+    padding: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.titulo span{
+    color: var(--btn-color);
+    padding: 10px;
+}
+
+
+.titulo:hover {
+    color: var(--bg-dark);
+    animation: acender 0.5s forwards;
+}
+
+.logo-content{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin: 0;
+}
+
+@keyframes acender {
+    to {
+        color: var(--text-color);
+        text-shadow: 0 0 10px var(--bg-dark), 0 0 20px var(--color-primary);
+    }
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+nav ul li a:hover {
+    color: var(--btn-color);
+    text-transform: uppercase;
+}
+
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    width: 100%;
+    height: 3px;
+    background-color: var(--btn-color);
+    border-radius: 10px;
+}
