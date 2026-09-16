@@ -5,9 +5,6 @@ let imagens = [
     "src/assets/Foto_Slide_Show3.jpg", 
     "src/assets/Foto_Slide_Show4.jpg", 
     "src/assets/Foto_Slide_Show5.jpg", 
-    "src/assets/Foto_Slide_Show6.jpg", 
-    "src/assets/Foto_Slide_Show7.jpg", 
-    "src/assets/Foto_Slide_Show8.jpg"
 ];
 
 // POSIÇÃO QUE VAI INICIAR AS IMAGENS
