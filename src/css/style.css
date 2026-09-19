@@ -2,7 +2,7 @@
 
 :root {
     --color-primary: #1b1d87;
-    --bg-dark: #0a1651;
+    --bg-dark: #0A1651;
     --btn-color: #ff8d28;
     --text-color: white;
     --header-bg: #1b1d87;
@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 2%;
-    background: var(--header-bg);
+    background: var(--bg-dark);
 }
 
 .titulo {
@@ -48,12 +48,19 @@ header {
 .logo-content{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: var(--header-bg);
+    padding: 20px 5px;
+    border-bottom: 3px solid #ff8d28;
+    align-items: center;
 }
 
 .logo {
     height: 40px;
-    margin: 0;
+}
+
+.logo-principal {
+    height: 70px;
 }
 
 @keyframes acender {
@@ -81,7 +88,14 @@ nav ul li a{
 
 nav ul li a:hover {
     color: var(--btn-color);
-    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+#nav-menu {
+    margin: auto;
 }
 
 .menu-hamburguer {
@@ -103,11 +117,12 @@ nav ul li a:hover {
 @media (max-width:768px){
     .menu-hamburguer{
         display: flex;
+        z-index: 1;
     }
     nav{
         display: none;
         position: absolute;
-        top:80px;
+        top:114px;
         left:0;
         width:100%;
         background:var(--header-bg);
