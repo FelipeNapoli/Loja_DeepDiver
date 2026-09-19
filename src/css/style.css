@@ -5,7 +5,7 @@
     --bg-dark: #0a1651;
     --btn-color: #ff8d28;
     --text-color: white;
-    --header-bg: #4345b4;
+    --header-bg: #1b1d87;
     --linear-bg: linear-gradient(to bottom, #0a1651, #1b1d87, #4345b4)
 }
 
@@ -48,6 +48,7 @@ header {
 .logo-content{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .logo {
