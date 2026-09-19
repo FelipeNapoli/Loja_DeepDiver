@@ -114,13 +114,25 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+.open span:nth-child(1){
+    transform:rotate(45deg) translate(5px, 5px)
+}
+
+.open span:nth-child(2){
+    opacity:0;
+}
+
+.open span:nth-child(3){
+    transform:rotate(-45deg) translate(7px, -7px)
+}
+
 #banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/teste_dave.webp);
+    background-image: url(../assets/fundo-slide.webp);
     margin-top: 10px;
-    background-position: top center;
+    background-position: center top;
 }
 
 #imgBanner {
@@ -129,6 +141,36 @@ nav ul li a:hover {
     border-radius: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.sobre-container {
+    background-image: url(../assets/fundo-sobre.png);
+    background-position: center;
+    width: 100%;
+    height: 333px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.card-sobre {
+    width: 450px;
+    height: 192px;
+    background-color: rgba(255, 140, 40, 0.845);
+    border: 2px solid var(--bg-dark);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.titulo-sobre {
+    margin: 15px 0px 25px 0px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+}
+
+.text-sobre {
+    font-size: 15px;
+    font-family: "Preahvihear", sans-serif;
 }
 
 @media (max-width:500px){
@@ -159,21 +201,8 @@ nav ul li a:hover {
     }
 }
 
-
 footer {
     text-align: center;
     padding: 40px;
     margin-top: 50px;
-}
-
-.open span:nth-child(1){
-    transform:rotate(45deg) translate(5px, 5px)
-}
-
-.open span:nth-child(2){
-    opacity:0;
-}
-
-.open span:nth-child(3){
-    transform:rotate(-45deg) translate(7px, -7px)
 }
