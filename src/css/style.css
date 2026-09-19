@@ -118,13 +118,17 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../assets/teste_dave.webp);
+    margin-top: 10px;
+    background-position: top center;
 }
 
 #imgBanner {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width:500px){
