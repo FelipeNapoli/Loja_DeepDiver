@@ -114,7 +114,20 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-@media (max-width:768px){
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgBanner {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+@media (max-width:500px){
     .menu-hamburguer{
         display: flex;
         z-index: 1;
@@ -137,23 +150,11 @@ nav ul li a:hover {
         text-align: center;
     }
     #imgBanner{
-        width: 80%;
-        height: 60%;
+        width: 65%;
+        height: 350px;
     }
 }
 
-#banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#imgBanner {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    margin-top: 50px;
-}
 
 footer {
     text-align: center;
