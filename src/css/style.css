@@ -153,7 +153,7 @@ nav ul li a:hover {
 
 .card-sobre {
     width: 450px;
-    height: 192px;
+    height: 215px;
     background-color: rgba(255, 140, 40, 0.845);
     border: 2px solid var(--bg-dark);
     border-radius: 10px;
