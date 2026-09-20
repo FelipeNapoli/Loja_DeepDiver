@@ -8,6 +8,7 @@
     --header-bg: #1b1d87;
     --linear-bg: linear-gradient(to bottom, #0a1651, #1b1d87, #4345b4);
     --card-border: #ffb347;
+    --fundo-card: #051c41;
 }
 
 *{
@@ -198,9 +199,9 @@ nav ul li a:hover {
 
 
 .card-header-logo img{
-    height: 90px;
+    height: 70px;
     background-color: #ff8d28;
-    margin: 10px 10px;
+    margin: 15px 20px;
     border-radius: 10px;
 }
 
@@ -232,7 +233,8 @@ nav ul li a:hover {
 
 .cards-produto {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    margin-top: 50px;
 }
 
 .card {
@@ -267,7 +269,7 @@ nav ul li a:hover {
 }
 
 .info-produto {
-    color: #ffd166;
+    color: #fe802c;
     position: relative;
     bottom: 12px;
 }
@@ -276,24 +278,26 @@ nav ul li a:hover {
     position: relative;
     margin: auto;
     z-index: 1;
-    color: #b18b19;
+    color: #cec9bc;
     margin: 0px 0px 100px 0px;
+    font-family: "Pixelify Sans", sans-serif;
     text-align: center;
 }
 
 button {
-    background-color: #ffb347;
+    background-color: #fe802c;
     border: none;
     padding: 12px 25px;
+    margin: 15px;
     position: relative;
     border-radius: 3px;
     cursor: pointer;
     transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
     color: #ffff;
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 .card:hover button{
-    background-color: #fe802c;
     box-shadow: 5px 5px 5px #00000063;
     transform: translateY(-2px);
 }
@@ -301,8 +305,6 @@ button {
 .card button:active {
     transition: none;
     box-shadow: inset 5px 5px 5px #00000063;
-    background-color: #ce5f15;
-    color: rgb(202, 199, 199);
     animation: pressionar 0.05s linear forwards;
 }
 
