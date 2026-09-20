@@ -6,7 +6,8 @@
     --btn-color: #ff8d28;
     --text-color: white;
     --header-bg: #1b1d87;
-    --linear-bg: linear-gradient(to bottom, #0a1651, #1b1d87, #4345b4)
+    --linear-bg: linear-gradient(to bottom, #0a1651, #1b1d87, #4345b4);
+    --card-border: #ffb347;
 }
 
 *{
@@ -228,6 +229,93 @@ nav ul li a:hover {
 .card-header-img {
     margin-right: 30px;
 }
+
+.cards-produto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    min-height: 250px;
+    padding: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;   
+}
+
+.borda {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.img-card {
+    height: 120px;
+    display: block;
+    margin: auto;
+    background-color: var(--card-border);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.info-produto {
+    color: #ffd166;
+    position: relative;
+    bottom: 12px;
+}
+
+.conteudo {
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    color: #b18b19;
+    margin: 0px 0px 100px 0px;
+    text-align: center;
+}
+
+button {
+    background-color: #ffb347;
+    border: none;
+    padding: 12px 25px;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+    color: #ffff;
+}
+
+.card:hover button{
+    background-color: #fe802c;
+    box-shadow: 5px 5px 5px #00000063;
+    transform: translateY(-2px);
+}
+
+.card button:active {
+    transition: none;
+    box-shadow: inset 5px 5px 5px #00000063;
+    background-color: #ce5f15;
+    color: rgb(202, 199, 199);
+    animation: pressionar 0.05s linear forwards;
+}
+
+@keyframes pressionar {
+    from {
+        transform: translateY(-2px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 
 @media (max-width:500px){
     .menu-hamburguer{
