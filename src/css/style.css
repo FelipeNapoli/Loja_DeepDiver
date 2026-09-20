@@ -172,6 +172,51 @@ nav ul li a:hover {
     font-family: "Preahvihear", sans-serif;
 }
 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-header-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.card-header-logo img{
+    height: 90px;
+    background-color: #ff8d28;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+.card-header-titulo {
+    font-family: 'Preahvihear', sans-serif;
+    text-align: center;
+}
+
+.card-header-titulo h3{
+    font-size: 22px;
+}
+
+.card-header-titulo p{
+    font-size: 14px;
+}
+
+.card-header-deco {
+    display: flex;
+    text-align: center;
+    margin: 10px 10px;
+    align-items: center;
+    gap: 80px;
+    font-family: "Preahvihear", sans-serif;
+}
+
+.card-header-img {
+    margin-right: 30px;
+}
+
 @media (max-width:500px){
     .menu-hamburguer{
         display: flex;
