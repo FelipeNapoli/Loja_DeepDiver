@@ -177,6 +177,10 @@ nav ul li a:hover {
 .card-container {
     background-image: url(../assets/camada-medio.png);
     margin-top: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .linha-divisao {
