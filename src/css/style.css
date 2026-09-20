@@ -8,7 +8,6 @@
     --header-bg: #1b1d87;
     --linear-bg: linear-gradient(to bottom, #0a1651, #1b1d87, #4345b4);
     --card-border: #ffb347;
-    --destaque-card: #D946EF;
 }
 
 *{
@@ -272,7 +271,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.info-produto {
+.info-card {
     color: #fe802c;
     position: relative;
     bottom: 12px;
@@ -320,6 +319,61 @@ button {
     to {
         transform: translateY(0);
     }
+}
+
+.card-container-abismo {
+    background-image: url(../assets/fundo-mar.jpg);
+    margin-top: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card-header-logo-abismo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.card-header-logo-abismo img{
+    height: 70px;
+    padding: 0px 30px;
+    background-color: #B45CFF;
+    margin: 15px 20px;
+    border-radius: 10px;
+}
+
+.card-header-img-abismo {
+    margin-right: 20px;
+    display: flex;
+    gap: 30px;
+    height: 50px;
+}
+
+.conteudo-abismo {
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    color: #cec9bc;
+    margin: 0px 0px 100px 0px;
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+}
+
+.info-card-abismo {
+    color: wheat;
+    position: relative;
+    bottom: 12px;
+}
+
+.conteudo-abismo img{
+    background-color: #D946EF;
+}
+
+.conteudo-abismo button {
+    background-color: #D946EF;
 }
 
 @media (max-width:500px){
