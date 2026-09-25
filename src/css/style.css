@@ -513,3 +513,20 @@ footer {
     }
 }
 
+@media (max-width: 950px) {
+
+    .card-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-header-logo, .card-header-logo-abismo {
+        display: block;
+        margin: 20px 0px;
+    }
+
+    .card-header-deco {
+        display: none;
+    }
+}
+
