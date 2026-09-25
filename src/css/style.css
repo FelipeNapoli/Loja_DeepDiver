@@ -397,7 +397,7 @@ footer {
 
 .footer-conteudo {
     display: flex;
-    padding: 70px 0px 15px 0px;
+    padding: 70px 0px 35px 0px;
     justify-content: space-between;
 }
 
@@ -472,6 +472,11 @@ footer {
     padding-left: 35px;
 }
 
+.footer-responssivo {
+    display: flex;
+
+}
+
 @media (max-width:500px){
     .menu-hamburguer{
         display: flex;
@@ -528,5 +533,53 @@ footer {
     .card-header-deco {
         display: none;
     }
+}
+
+@media (max-width: 1200px) {
+    .footer-conteudo {
+        display: block;
+    }
+
+    .footer-responssivo {
+        justify-content: center;
+    }
+
+    .footer-deco em{
+        display: none;
+    }
+
+    .footer-deco {
+        border: none;
+    }
+
+    .footer-deco img {
+        display: block;
+        margin: auto;
+        height: 20vw;
+    }
+}
+
+@media (max-width: 675px) {
+    .footer-logo img{
+        height: 15vw;
+    }
+
+    .footer-logo {
+        padding-right: 18px;
+    }
+
+    .footer-contato {
+        padding-left: 18px;
+    }
+
+    .email img, .tel img, .local img {
+        height: 3vw;
+    }
+
+    .email p, .tel p, .local p {
+        font-size: 2vw;
+    }
+
+    
 }
 
