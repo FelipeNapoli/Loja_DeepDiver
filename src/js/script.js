@@ -11,7 +11,7 @@ let imagens = [
 let index=0;
 
 // TEMPO PARA TROCAR AS IMAGENS
-let tempo = 3000; //3 segundos
+let tempo = 5000; //3 segundos
 
 // FUNÇÃO DO SLIDESHOW
 function SlideShow(){

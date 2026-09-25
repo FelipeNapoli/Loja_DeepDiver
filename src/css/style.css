@@ -146,6 +146,8 @@ nav ul li a:hover {
 .sobre-container {
     background-image: url(../assets/fundo-sobre.png);
     background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
     height: 333px;
     display: flex;
