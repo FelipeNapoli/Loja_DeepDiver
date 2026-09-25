@@ -498,4 +498,18 @@ footer {
         width: 65%;
         height: 350px;
     }
+
+    .card-sobre{
+        width: 80%;
+        min-width: 280px;
+    }
+
+    .titulo-sobre {
+        font-size: 6vw;
+    }
+
+    .text-sobre {
+        font-size: 80%;
+    }
 }
+
