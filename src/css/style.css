@@ -271,6 +271,7 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
+    border: 2px solid #42c6d6;
 }
 
 .info-card {
@@ -287,6 +288,7 @@ nav ul li a:hover {
     margin: 0px 0px 100px 0px;
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
 }
 
 button {
@@ -300,6 +302,7 @@ button {
     transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
     color: #ffff;
     font-family: "Pixelify Sans", sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
 }
 
 .card:hover button{
@@ -365,13 +368,15 @@ button {
 }
 
 .info-card-abismo {
-    color: wheat;
+    color: #dd03ff;
     position: relative;
     bottom: 12px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
 }
 
 .conteudo-abismo img{
     background-color: #D946EF;
+    border: 2px solid #3B82F6;
 }
 
 .conteudo-abismo button {
