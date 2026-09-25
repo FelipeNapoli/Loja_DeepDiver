@@ -1,4 +1,13 @@
 // ARRAY DE IMAGENS
+
+const menuIcone = document.getElementById("menu-icone");
+const navMenu = document.getElementById("nav-menu");
+
+menuIcone.addEventListener('click',()=>{
+    navMenu.classList.toggle("active");
+    menuIcone.classList.toggle("open");
+})
+
 let imagens = [
     "src/assets/Foto_Slide_Show.jpg", 
     "src/assets/Foto_Slide_Show2.jpg", 
@@ -8,7 +17,7 @@ let imagens = [
 ];
 
 // POSIÇÃO QUE VAI INICIAR AS IMAGENS
-let index=0;
+let index = 0;
 
 // TEMPO PARA TROCAR AS IMAGENS
 let tempo = 5000; //3 segundos
@@ -29,11 +38,3 @@ function SlideShow(){
 }
 // EXECUTANDO A FUNÇÃO
 SlideShow();
-
-const menuIcone = document.getElementById("menu-icone");
-const navMenu = document.getElementById("nav-menu");
-
-menuIcone.addEventListener('click',()=>{
-    navMenu.classList.toggle("active");
-    menuIcone.classList.toggle("open");
-})
