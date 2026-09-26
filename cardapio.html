@@ -5,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <style>
-        
+
+        :root {
+            --color-primary: #4a3c34;
+            --bg-dark: #8d7560;
+            --btn-color: #e4ad7d;
+            --text-color: white;
+            --header-bg: #4a3c34;
+            --linear-bg: linear-gradient(to bottom, #0a1651, #1b1d87, #4345b4);
+            --card-border: #cfae91;
+        }
+
+        .logo {
+            height: 100px;
+        }
+
+        .logo-principal {
+            height: 120px;
+        }
+
+        .logo-content {
+            border-color: var(--card-border);
+        }
+
         .menu-cardapio-container {
             background-image: url(src/assets/fundo-madeira.avif);
             background-repeat: no-repeat;
@@ -34,6 +56,15 @@
             font-family: "Pixelify sans", sans-serif;
         }
 
+        footer {
+            background-color: var(--header-bg);
+        }
+
+        .copy p{
+            color: #4a3c34;
+            text-shadow: none;
+        }
+
         @media (max-width: 1135px) {
             .menu-cardapio-container {
                 grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -44,9 +75,9 @@
 </head>
 <body>
     <div class="logo-content">
-        <img src="src/assets/decoracao.png" alt="" class="logo">
-        <img src="src/assets/logo_daveThediver.webp" alt="" class="logo-principal">
-        <img src="src/assets/decoracao.png" alt="Atum" class="logo">
+        <img src="src/assets/icone-cardapio.png" alt="" class="logo">
+        <img src="src/assets/logo-banchoSushi.png" alt="" class="logo-principal">
+        <img src="src/assets/icone-cardapio.png" alt="Atum" class="logo">
     </div>
 
     <header>
