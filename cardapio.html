@@ -5,7 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <style>
+        
+        .menu-cardapio-container {
+            background-image: url(src/assets/fundo-madeira.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+        }
 
+        .menu-cardapio-options {
+            background-image: url(src/assets/fundo-cardapio2.png);
+            background-size: cover;
+            background-position: top center;
+            width: 270px;
+            height: 160px;
+            margin: 50px auto;
+            align-content: center;
+            text-align: center;
+        }
+
+        .menu-cardapio-options img{
+            height: 60px;
+        }
+
+        .menu-cardapio-options h3{
+            color: black;
+            font-family: "Pixelify sans", sans-serif;
+        }
+
+        @media (max-width: 1135px) {
+            .menu-cardapio-container {
+                grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            }
+        }
     </style>
     <title>Cardápio</title>
 </head>
@@ -33,23 +66,23 @@
     </header>
 
     <main>
-        <section class="cardapio-container">
-            <article class="cardapio-options">
+        <section class="menu-cardapio-container">
+            <article class="menu-cardapio-options">
                 <img src="src/assets/peixe-cardápio.webp" alt="logo peixe cardápio">
                 <h3>Peixes</h3>
             </article>
 
-            <article class="cardapio-options">
+            <article class="menu-cardapio-options">
                 <img src="src/assets/equipamento-cardapio.webp" alt="Logo equipamentos cardápio">
                 <h3>Equipamentos</h3>
             </article>
 
-            <article class="cardapio-options">
+            <article class="menu-cardapio-options">
                 <img src="src/assets/ingred-cardápio.webp" alt="Logo ingredientes cardápio">
                 <h3>Ingredientes</h3>
             </article>
 
-            <article class="cardapio-options">
+            <article class="menu-cardapio-options">
                 <img src="src/assets/prato-tubarão.webp" alt="Logo pratos cardápio">
                 <h3>Pratos</h3>
             </article>
