@@ -584,3 +584,15 @@ footer {
     
 }
 
+@media (max-width: 500px) {
+    
+    .logo {
+        display: none;
+    }
+
+    .logo-principal {
+        height: 80px;
+        display: 'block';
+        margin: auto;
+    }
+}
