@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,14 +20,16 @@ img {
 button {
     width: 100vw;
     padding: 30px;
-    background-image: linear-gradient(to top, rgb(53, 53, 231), rgb(2, 31, 94), rgb(0, 4, 74));
+    background-image: linear-gradient(to bottom, #2b003c, #5a0078, #af04b8);
     border: none;
     margin-top: -5px;
     color: white;
     cursor: pointer;
+    font-family: "Play", sans-serif;
 }
 
 button:hover {
-    background-image: linear-gradient(to top, rgb(2, 31, 94), rgb(53, 53, 231), rgb(0, 4, 74));
+    background-image: linear-gradient(to top, #2b003c, #5a0078, #af04b8);
+    text-transform: uppercase;
 
 }
