@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <style>
+        :root {
+            --color-primary: #3b003b;
+            --bg-dark: #320042;
+            --btn-color: #d5008e;
+            --text-color: white;
+            --header-bg: #3b003b;
+            --linear-bg: linear-gradient(to bottom, #2b003c, #5a0078, #af04b8);
+            --card-border: #d5008e;
+        }
+
+        .logo-content {
+            border-color: var(--card-border);
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .logo-content h1 {
+            font-family: "Play", sans-serif;
+            border-left: 3px solid var(--card-border);
+            border-right: 3px solid var(--card-border);
+            padding: 10px 15px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 1px 10px #d5008e7a;
+            font-size: 22px;
+        }
+
+        span {
+            text-decoration: underline;
+            text-decoration-color: var(--btn-color);
+            font-size: 45px;
+        }
+
+        .celular-conteiner {
+            background-image: url(src/assets/fundo-contato.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        footer {
+            background-color: var(--bg-dark);
+            margin-top: 0;
+        }
+    </style>
+    <title>Contatos</title>
+</head>
+<body>
+    <div class="logo-content">
+        <img src="src/assets/logo-contato.png" alt="" class="logo-principal">
+        <h1>Central do <br><span>DUFF</span></h1>
+    </div>
+
+    <header>
+        <div class="menu-hamburguer" id="menu-icone">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="celular-conteiner">
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-responssivo">
+                <div class="footer-logo">
+                    <img src="src/assets/logo_daveThediver.webp" alt="logo Dave" class="logo-footer">
+                </div>
+                <div class="footer-contato">
+                    <div class="email">
+                        <img src="src/assets/o-email.png" alt="email">
+                        <p>banchosushi@gmail.com</p>
+                    </div>
+                    <div class="tel">
+                        <img src="src/assets/telefone.png" alt="telefone">
+                        <p>(11) 90982-2080</p>
+                    </div>
+                    <div class="local">
+                        <img src="src/assets/localizacao.png" alt="localização">
+                        <p>Rua das Profundezas, <br> 123 ilha Blue Hole, São Paulo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-deco">
+                <em class="mkt">&#129767;Peixes, Sushis e Boas Histórias</em>
+                <img src="src/assets/img-fundoFooter.png" alt="imagem restaurante">
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2026 - Todos os direito reservados</p>
+        </div>
+    </footer>
+</body>
+<script src="src/js/script.js"></script>
+</html>

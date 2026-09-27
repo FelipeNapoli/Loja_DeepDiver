@@ -9,7 +9,7 @@ menuIcone.addEventListener('click',()=>{
 })
 
 function cardapioPeixe() {
-    const cardapio = document.getElementsByName("section-cardapio");
+    let cardapio = document.getElementsByName("section-cardapio");
 
     cardapio[0].innerHTML = `
         <section class="cardapio" name="cardapio">
@@ -89,7 +89,7 @@ function cardapioItem () {
     let cardapio = document.getElementsByName("section-cardapio");
 
     cardapio[0].innerHTML = `
-    <section class="cardapio" name="cardapio">
+        <section class="cardapio" name="cardapio">
             <article>
                 <div class="item-cardapio">
                     <div class="titulo-cardapio">
@@ -167,7 +167,7 @@ function cardapioIngred () {
     let cardapio = document.getElementsByName("section-cardapio");
 
     cardapio[0].innerHTML = `
-    <section class="cardapio" name="cardapio">
+        <section class="cardapio" name="cardapio">
             <article>
                 <div class="item-cardapio">
                     <div class="titulo-cardapio">
@@ -244,7 +244,7 @@ function cardapioPrato () {
     let cardapio = document.getElementsByName("section-cardapio");
 
     cardapio[0].innerHTML = `
-    <section class="cardapio" name="cardapio">
+        <section class="cardapio" name="cardapio">
             <article>
                 <div class="item-cardapio">
                     <div class="titulo-cardapio">
