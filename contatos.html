@@ -43,7 +43,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            height: 800px;
+            height: 920px;
             position: relative;
         }
 
@@ -54,7 +54,7 @@
             background-size: cover;
             width: 300px;
             height: 600px;
-            top: 50%;
+            top: 45%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -68,9 +68,102 @@
             border-radius: 4px;
         }
 
+        .botoes-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            background-image: var(--linear-bg); 
+            width: 100%;
+            margin-bottom:-20px;
+            padding: 10px 0;
+        }
+
+        .botoes {
+            background-image: url(src/assets/botões-contato.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 205px;
+            height: 120px;
+            text-align: center;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-botao {
+            height: 50px;
+        }
+
         footer {
             background-color: var(--bg-dark);
             margin-top: 0;
+        }
+
+        @media (max-width: 1000px) {
+            .botoes {
+                width: 150px;
+                height: 90px;
+                margin: auto;
+            }
+
+            .logo-botao {
+                height: 35px;
+            }
+
+            .big-name {
+                font-size: 15px;
+            }
+
+            .botoes-container {
+                gap: 0px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            }
+        }
+
+        @media (max-width: 650px) {
+            .botoes-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
+            }
+        }
+
+        @media (max-width: 500px) {
+            .logo-content h1 {
+                display: none;
+            }
+
+            .celular-conteiner {
+                height: 800px;
+            }
+
+            .celular {
+                width: 250px;
+                height: 500px;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            iframe {
+                width: 220px;
+                height: 420px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .celular-conteiner {
+                height: 1000px;
+            }
+
+            .celular {
+                top: 29%;
+            }
         }
     </style>
     <title>Contatos</title>
@@ -103,6 +196,29 @@
 
             </iframe>
         </div>
+
+        <section class="botoes-container">
+            <article class="botoes">
+                <img src="src/assets/home-icon.png" alt="logo-home" class="logo-botao">
+                <h3>Home</h3>
+            </article>
+
+            <article class="botoes">
+                <img src="src/assets/GitHub-logo.png" alt="logo-github" class="logo-botao">
+                <h3>GitHub</h3>
+            </article>
+
+            <article class="botoes">
+                <img src="src/assets/logo-linkedln.png" alt="logo-linkedin" class="logo-botao">
+                <h3>Linkedln</h3>
+            </article>
+
+            <article class="botoes">
+                <img src="src/assets/cockstar-logo.png" alt="logo-cockstar" class="logo-botao">
+                <h3 class="big-name">Referência ao jogo</h3>
+            </article>
+
+        </section>
     </main>
 
     <footer>

@@ -493,6 +493,7 @@ footer {
         background:var(--header-bg);
         flex-direction: column;
         padding: 20px 0;
+        z-index: 1;
     }
     nav.active{
         display:block;
@@ -593,7 +594,7 @@ footer {
 
     .logo-principal {
         height: 80px;
-        display: 'block';
+        display: block;
         margin: auto;
     }
 }
