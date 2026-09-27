@@ -45,6 +45,7 @@
             margin: 50px auto;
             align-content: center;
             text-align: center;
+            cursor: pointer;
         }
 
         .menu-cardapio-options img{
@@ -56,8 +57,97 @@
             font-family: "Pixelify sans", sans-serif;
         }
 
+        .cardapio {
+            background-image: url("src/assets/fundo-bachoSushi.jpg");
+            background-size: cover;
+            background-position: center center;
+            padding: 60px 5%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .cardapio > article {
+            width: min(500px, 48%);
+            padding: 25px;
+            background-image: url("src/assets/fundo-cardapio.png");
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .item-cardapio {
+            margin: 15px 0;
+            padding: 8px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            background-color: rgb(218, 211, 211);
+            box-shadow: 2px 2px 8px #0000001f;
+            border-radius: 5px;
+            border: 1px solid var(--header-bg);
+            transition: transform 0.3s ease;
+        }
+
+        .titulo-cardapio {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .titulo-cardapio > img {
+            width: 65px;
+            height: 50px;
+            background-color: #3f3d3c;
+            border-radius: 8px;
+        }
+
+        .nome-cardapio {
+            margin: 0;
+            padding: 12px 25px 13px 20px;
+            color: white;
+            background-image: url("src/assets/efeito-cardapioMarrom.png");
+            background-size: 200px 80px;
+            background-position: center;
+            font-family: "Pixelify sans", sans-serif;
+        }
+
+        .preco {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: -10px;
+            margin-left: auto;
+            justify-self: last baseline;
+        }
+
+        .moeda {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .preco p {
+            margin: 0;
+            color: #3d2b20;
+            font-weight: bold;
+        }
+
+        .item-cardapio:hover {
+            transform: scale(1.02);
+            border: 1px solid var(--btn-color);
+            box-shadow: 2px 2px 8px #f8bf0279;
+        }
+
+        .item-cardapio:hover .nome-cardapio {
+            background-image: url(src/assets/efeito-cardapio.png);
+            padding-top: 13px;
+        }
+
         footer {
             background-color: var(--header-bg);
+            margin-top: 0px;
         }
 
         .copy p{
@@ -68,6 +158,25 @@
         @media (max-width: 1135px) {
             .menu-cardapio-container {
                 grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            }
+        }
+
+        @media (max-width: 838px) {
+            .cardapio {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cardapio > article {
+                width: 80%;
+            }
+
+            .logo-principal {
+                height: 100px;
+            }
+
+            .logo {
+                height: 60px;
             }
         }
     </style>
@@ -98,25 +207,29 @@
 
     <main>
         <section class="menu-cardapio-container">
-            <article class="menu-cardapio-options">
+            <article class="menu-cardapio-options" onclick="cardapioPeixe()">
                 <img src="src/assets/peixe-cardápio.webp" alt="logo peixe cardápio">
                 <h3>Peixes</h3>
             </article>
 
-            <article class="menu-cardapio-options">
+            <article class="menu-cardapio-options" onclick="cardapioItem()">
                 <img src="src/assets/equipamento-cardapio.webp" alt="Logo equipamentos cardápio">
                 <h3>Equipamentos</h3>
             </article>
 
-            <article class="menu-cardapio-options">
+            <article class="menu-cardapio-options" onclick="cardapioIngred()">
                 <img src="src/assets/ingred-cardápio.webp" alt="Logo ingredientes cardápio">
                 <h3>Ingredientes</h3>
             </article>
 
-            <article class="menu-cardapio-options">
+            <article class="menu-cardapio-options" onclick="cardapioPrato()">
                 <img src="src/assets/prato-tubarão.webp" alt="Logo pratos cardápio">
                 <h3>Pratos</h3>
             </article>
+        </section>
+
+        <section name="section-cardapio">
+
         </section>
     </main>
 
