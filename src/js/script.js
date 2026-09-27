@@ -86,15 +86,235 @@ function cardapioPeixe() {
 }
 
 function cardapioItem () {
+    let cardapio = document.getElementsByName("section-cardapio");
+
+    cardapio[0].innerHTML = `
+    <section class="cardapio" name="cardapio">
+            <article>
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/item-bastao.webp" alt="">
+                        <h3 class="nome-cardapio">power bastão</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>1220</p>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/item-arpao.webp" alt="">
+                        <h3 class="nome-cardapio">Arpão Grande</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>830</p>
+                    </div>
+                </div>
+
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/item-chapolim.webp" alt="">
+                        <h3 class="nome-cardapio">Marreta Bionic</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>1500</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/item-box.webp" alt="">
+                        <h3 class="nome-cardapio">Luva de Box</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>450</p>
+                    </div>
+                </div>
+
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/item-galinha.webp" alt="">
+                        <h3 class="nome-cardapio">Galinha violenta</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>480</p>
+                    </div>
+                </div>
+
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/item-picareta.webp" alt="">
+                        <h3 class="nome-cardapio">Picareta minero</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>310</p>
+                    </div>
+                </div>
+            </article>
+        </section>`;
 
 }
 
 function cardapioIngred () {
-    
+    let cardapio = document.getElementsByName("section-cardapio");
+
+    cardapio[0].innerHTML = `
+    <section class="cardapio" name="cardapio">
+            <article>
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/ingred-shoyo.webp" alt="">
+                        <h3 class="nome-cardapio">Molho Shoyo</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>40</p>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/ingred-miso.webp" alt="">
+                        <h3 class="nome-cardapio">Molho Miso</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>80</p>
+                    </div>
+                </div>
+
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/ingred-cenora.webp" alt="">
+                        <h3 class="nome-cardapio">Tomate fresco</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>20</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/ingred-tomate.webp" alt="">
+                        <h3 class="nome-cardapio">Cenouras</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>20</p>
+                    </div>
+                </div>
+
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/ingred-mayo.webp" alt="">
+                        <h3 class="nome-cardapio">Maionese</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>65</p>
+                    </div>
+                </div>
+
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/ingred-sal.webp" alt="">
+                        <h3 class="nome-cardapio">Tempero Sal</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>35</p>
+                    </div>
+                </div>
+            </article>
+        </section>`
 }
 
 function cardapioPrato () {
+    let cardapio = document.getElementsByName("section-cardapio");
 
+    cardapio[0].innerHTML = `
+    <section class="cardapio" name="cardapio">
+            <article>
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/prato-bacalhau.webp" alt="">
+                        <h3 class="nome-cardapio">bacalhau frito</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>145</p>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/prato-sushi-vegetal.webp" alt="">
+                        <h3 class="nome-cardapio">Sushi Vegetal</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>215</p>
+                    </div>
+                </div>
+
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/prato-sushi-tubarao.webp" alt="">
+                        <h3 class="nome-cardapio">Rabo de tubarão</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>220</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/prato-habanero-frito.webp" alt="">
+                        <h3 class="nome-cardapio">Habanero frito</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>200</p>
+                    </div>
+                </div>
+
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/prato-racemosa.webp" alt="">
+                        <h3 class="nome-cardapio">Barca Racemosa</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>285</p>
+                    </div>
+                </div>
+
+                <div class="item-cardapio">
+                    <div class="titulo-cardapio">
+                        <img src="src/assets/prato-tamago-egg.webp" alt="">
+                        <h3 class="nome-cardapio">Tamago Egg</h3>
+                    </div>
+                    <div class="preco">
+                        <img src="src/assets/moeda.png" alt="" class="moeda">
+                        <p>195</p>
+                    </div>
+                </div>
+            </article>
+        </section>`
 }
 
 let imagens = [
