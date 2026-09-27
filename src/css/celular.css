@@ -20,6 +20,6 @@ button {
     padding: 30px;
     background-image: linear-gradient(to top, rgb(53, 53, 231), rgb(2, 31, 94), rgb(0, 4, 74));
     border: none;
-    margin-top: -20px;
+    margin-top: -5px;
     color: white;
 }

@@ -93,6 +93,31 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .botoes:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.774);
+        }
+
+        .botoes:hover h3 {
+            color: var(--btn-color);
+            text-decoration: underline;
+            text-decoration-color: var(--btn-color);
+            text-decoration-thickness: 3px;
+            text-underline-offset: 4px;
+        }
+
+        .botoes:active {
+            transform: scale(1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.774);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
         }
 
         .logo-botao {
@@ -192,31 +217,39 @@
 
     <main class="celular-conteiner">
         <div class="celular">
-            <iframe src="" frameborder="0">
+            <iframe src="" frameborder="0" name="contato">
 
             </iframe>
         </div>
 
         <section class="botoes-container">
-            <article class="botoes">
-                <img src="src/assets/home-icon.png" alt="logo-home" class="logo-botao">
-                <h3>Home</h3>
-            </article>
+            <a href="home.html" target="contato">
+                <article class="botoes">
+                    <img src="src/assets/home-icon.png" alt="logo-home" class="logo-botao">
+                    <h3>Home</h3>
+                </article>
+            </a>
 
-            <article class="botoes">
-                <img src="src/assets/GitHub-logo.png" alt="logo-github" class="logo-botao">
-                <h3>GitHub</h3>
-            </article>
+            <a href="github.html" target="contato">
+                <article class="botoes">
+                    <img src="src/assets/GitHub-logo.png" alt="logo-github" class="logo-botao">
+                    <h3>GitHub</h3>
+                </article>
+            </a>
 
-            <article class="botoes">
-                <img src="src/assets/logo-linkedln.png" alt="logo-linkedin" class="logo-botao">
-                <h3>Linkedln</h3>
-            </article>
+            <a href="linkedln.html" target="contato">
+                <article class="botoes">
+                    <img src="src/assets/logo-linkedln.png" alt="logo-linkedin" class="logo-botao">
+                    <h3>Linkedln</h3>
+                </article>
+            </a>
 
-            <article class="botoes">
-                <img src="src/assets/cockstar-logo.png" alt="logo-cockstar" class="logo-botao">
-                <h3 class="big-name">Referência ao jogo</h3>
-            </article>
+            <a href="cookstar.html" target="contato">
+                <article class="botoes">
+                    <img src="src/assets/cockstar-logo.png" alt="logo-cockstar" class="logo-botao">
+                    <h3 class="big-name">Referência ao jogo</h3>
+                </article>
+            </a>
 
         </section>
     </main>

@@ -46,6 +46,26 @@
             align-content: center;
             text-align: center;
             cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-cardapio-options:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.774);
+        }
+
+        .menu-cardapio-options:hover h3 {
+            color: var(--header-bg);
+            text-decoration: underline;
+            text-decoration-color: var(--header-bg);
+            text-decoration-thickness: 3px;
+            text-underline-offset: 4px;
+        }
+
+        .menu-cardapio-options:active {
+            transform: scale(1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.774);
         }
 
         .menu-cardapio-options img{
